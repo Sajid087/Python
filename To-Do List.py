@@ -25,13 +25,14 @@ def display_tasks():
 
 # Main program loop
 while True:
-    print("\n--- TO-DO LIST ---")
+    print("\n--- MENU ---")
     print("1. Add Task")
     print("2. Remove Task")
     print("3. Display Tasks")
-    print("4. Exit")
+    print("4. Option Selection")
+    print("5. Exit")
 
-    choice = input("Enter your choice (1-4): ")
+    choice = input("Enter your choice (1-5): ")
 
     if choice == '1':
         task = input("Enter task: ")
@@ -42,6 +43,25 @@ while True:
     elif choice == '3':
         display_tasks()
     elif choice == '4':
+        print("--- OPTION SELECTION ---")
+        option = input("Choose an option (A, B, C): ")
+
+        if option == "A":
+            print("You selected option A.")
+            # Add your logic and functionality for option A here
+
+        elif option == "B":
+            print("You selected option B.")
+            # Add your logic and functionality for option B here
+
+        elif option == "C":
+            print("You selected option C.")
+            # Add your logic and functionality for option C here
+
+        else:
+            print("Invalid option selected.")
+
+    elif choice == '5':
         print("Exiting program...")
         break
     else:
